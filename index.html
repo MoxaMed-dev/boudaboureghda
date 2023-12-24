@@ -1,56 +1,32 @@
 
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Pacifico&display=swap" rel="stylesheet">
-    <title>BIG TP 1</title>
+    <title>Calcul d'Entropie</title>
+   
+    
+    
 </head>
 <body>
-
-    <div class="credits">
-        <p>
-            ce site a été développé par le binôme <span>BOUTA Ali</span> et <span>BELKADI Zakaria</span><br> dans le module <span>TICT</span> de l'année <span>L3 GTR</span><br> sous la supervision de l'enseignante <br> <span>MERAZKA Fatiha</span>.
-        </p>
-        <br>
-        <p style="font-size: x-large;">2021/2022</p>
+    <div class="container">
+        <h2 class="title">
+            <span class="title-word title-word-1">Bienvenue</span>
+        </h2>
     </div>
 
-    <div class="note">
-        <h1 class="assurez">Assurez-vous de remplir <span>les deux champs de taille</span> des deux sources <span>avant</span> d'essayer de calculer une quelconque fonction </h1>
-        <!-- <h1 class="assurez1">Assurez-vous de remplir les deux champs de taille des deux sources avant d'essayer de calculer une quelconque fonction </h1> -->
+    <div class="container mt-5">
+        <h1>Choisissez une option :</h1>
+        <div class="row mb-4">
+            <div class="col-md-6">
+                <button class="button-74" role="button" onclick="selectChoice(1)">Une seule source</button>
+            </div>
+            <div class="col-md-6">
+                <button class="button-74" role="button" onclick="selectChoice(2)">Deux sources</button>
+            </div>
+        </div>
+        <div id="result" class="mt-4"></div>
     </div>
-
-    <div class="taille">
-        <label for="x">La taille de la source X</label>
-        <input type="text" name="taillex" id="x" placeholder="Entrer un nombre...">
-        <br>
-        <label for="y">La taille de la source Y</label>
-        <input type="text" name="tailley" id="y" placeholder="Entrer un nombre...">
-
-    </div>
-
-    <div class="results-area">
-        <h1>les résultats seront affichés ici</h1>
-        <h2 class="results"></h2>
-    </div>
-
-    <div class="options">
-        <div class="opt entropiex"  id="hx" onclick="entropieX()">L'entropie de la source X</div>
-        <div class="opt entropiey"  id="hy" onclick="entropieY()">L'entropie de la source Y</div>
-        <div class="opt iconjointe"  id="ixy" onclick="cntt_info()">La contité d'information conjointe</div>
-        <div class="opt entropiec"  id="hxy" onclick="Hconjointe()">L'entropie conjointe</div>
-        <div class="opt hcondx-y" id="x-y" onclick="Hcond_X_Y()">L'entropie de la source X sachant Y</div>
-        <div class="opt hcondy-x" id="y-x" onclick="Hcond_Y_X()">L'entropie de la source Y sachant X</div>
-    </div>
-
-    <button onclick="window.location.href = '../index.html'">Home</button>
-
+    
     <script src="script.js"></script>
 </body>
 </html>
