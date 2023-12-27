@@ -160,6 +160,36 @@
 
 </head>
 <body>
+    <div class="note">
+        <h1 class="assurez">Assurez-vous de remplir <span>les deux champs de taille</span> des deux sources <span>avant</span> d'essayer de calculer une quelconque fonction </h1>
+        <!-- <h1 class="assurez1">Assurez-vous de remplir les deux champs de taille des deux sources avant d'essayer de calculer une quelconque fonction </h1> -->
+    </div>
+
+    <div class="taille">
+        <label for="x">La taille de la source X</label>
+        <input type="text" name="taillex" id="x" placeholder="Entrer un nombre...">
+        <br>
+        <label for="y">La taille de la source Y</label>
+        <input type="text" name="tailley" id="y" placeholder="Entrer un nombre...">
+
+    </div>
+
+    <div class="results-area">
+        <h1>les résultats seront affichés ici</h1>
+        <h2 class="results"></h2>
+    </div>
+
+    <div class="options">
+        <div class="opt entropiex"  id="hx" onclick="entropieX()">L'entropie de la source X</div>
+        <div class="opt entropiey"  id="hy" onclick="entropieY()">L'entropie de la source Y</div>
+        <div class="opt iconjointe"  id="ixy" onclick="cntt_info()">La contité d'information conjointe</div>
+        <div class="opt entropiec"  id="hxy" onclick="Hconjointe()">L'entropie conjointe</div>
+        <div class="opt hcondx-y" id="x-y" onclick="Hcond_X_Y()">L'entropie de la source X sachant Y</div>
+        <div class="opt hcondy-x" id="y-x" onclick="Hcond_Y_X()">L'entropie de la source Y sachant X</div>
+    </div>
+
+    <button onclick="window.location.href = '../index.html'">Home</button>
+
 
     <div class="container">
         <h2 class="title">
